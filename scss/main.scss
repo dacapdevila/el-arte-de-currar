@@ -1,0 +1,14 @@
+@import "../bootstrap/scss/bootstrap";
+@import "./header";
+@import "./contenedorInicio";
+@import "./footer";
+@import "./ingreso";
+@import "./containerMain";
+body{
+    background-image: url(../img/fondo.png);
+    section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

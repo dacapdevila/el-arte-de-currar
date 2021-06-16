@@ -1,0 +1,28 @@
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    bottom: 0;
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+    color: #a5e1ad;
+    background: #554377;
+    border-top: 1px solid #3b14a7;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, .6);
+    .redes{
+        margin-right: 5px;
+    }
+}
+$redes: (
+    facebook: #185adb,
+    instagram: #fdb827,
+    twitter: #867ae9
+);
+@each $red, $color in $redes{
+    .btn--#{$red}{
+        background: $color;
+    }
+    
+}
